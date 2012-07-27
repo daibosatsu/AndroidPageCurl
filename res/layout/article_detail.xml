@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/article_detail_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#54545450" >
+
+    <RelativeLayout
+        android:id="@+id/mv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#54545450" >
+
+        <ScrollView
+            android:id="@+id/llp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="54dp"
+            android:orientation="vertical"
+            android:padding="6dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/article_detail_title_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/article_detail_image_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/bilspion" />
+
+                <TextView
+                    android:id="@+id/article_detail_date_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/article_detail_preamable_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="fill_horizontal"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/article_detail_content_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/article_detail_author_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/max_header"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:id="@+id/scrll"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="6dp"
+                android:background="@drawable/article_detail_bg"
+                android:orientation="vertical"
+                android:padding="6dp" >
+
+                <!-- android:overScrollMode="never" -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/article_detail_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/article_detail_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:src="@drawable/bilspion" />
+
+                    <TextView
+                        android:id="@+id/article_detail_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/article_detail_preamable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:gravity="fill_horizontal"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/article_detail_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/article_detail_author"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:textColor="#000000" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <com.mystictreegames.pagecurl.PageCurlView
+            android:id="@+id/dcgpagecurlPageCurlView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="54dp" >
+        </com.mystictreegames.pagecurl.PageCurlView>
+
+        <com.mystictreegames.pagecurl.ArticleHeader
+            android:id="@+id/max_header"
+            android:layout_width="match_parent"
+            android:layout_height="48dip"
+            android:background="@drawable/navigation" >
+        </com.mystictreegames.pagecurl.ArticleHeader>
+    </RelativeLayout>
+
+</LinearLayout>
